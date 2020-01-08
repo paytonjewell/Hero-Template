@@ -11,22 +11,46 @@ body {
   font-family: "Raleway", Helvetica, sans-serif;
 }
 
-.headerText {
-    width: 100%;
-    height: 80vh;
-    background: linear-gradient(
-        rgba(142, 197, 252, 0.7), 
-        rgba(224, 195, 252, 0.7)
-      ),
-      url("https://images.unsplash.com/photo-1504707748692-419802cf939d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1030&q=80");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    flex-direction: column;
-    line-height: .3;
+.hero {
+/* Sizing */
+width: 100vw;
+height: 100vh;
+
+/* flexbox */
+display: flex;
+justify-content: center;
+align-items: center;
+
+text-align: center;
+color: white;
+
+background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg);
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero .btn {
+  display: block;
+  width: 8em;
+  border: 2px solid white;
+  padding: 1em;
+  margin: 1em auto 0 auto;
+  color: white;
+  text-decoration: none;
+  border-radius: 1em;
+  background-color: rgba(255, 219, 101, 0.534);
+}
+
+
+main {
+  padding: 2em;
+  padding-bottom: 4em;
 }
